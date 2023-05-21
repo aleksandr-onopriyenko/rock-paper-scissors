@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 
 :root {
-  --gradient-scissors: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
-  --gradient-paper: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
-  --gradient-rock: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
-  --gradient-lizard: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
-  --gradient-cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
-  --gradient-body: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+  --gradient-scissors: to right, hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --gradient-paper: to right, hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+  --gradient-rock: to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+  --gradient-lizard: to right, hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+  --gradient-cyan: to right, hsl(189, 59%, 53%), hsl(189, 58%, 57%);
+  --gradient-body: to right, hsl(214, 47%, 23%), hsl(237, 49%, 15%);
 
   --color-dark: hsl(229, 25%, 31%);
   --color-score: hsl(229, 64%, 46%);

@@ -1,0 +1,122 @@
+$color-scissors: #ec9e0e;
+$color-paper: #4865f4;
+$color-rock: #dc2e4e;
+$color-lizard: #834fe3;
+$color-cyan: #40b9ce;
+$color-body: #1f3756;
+
+.btn {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: solid 20px transparent;
+  border-radius: 50%;
+  transition: scale 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -20px;
+    border-radius: inherit;
+    background: #fff;
+
+    transition: scale 0.3s;
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 900px) {
+    width: 200px;
+    height: 200px;
+    border-width: 25px;
+
+    &::before {
+      margin: -25px;
+    }
+
+    &:hover:before {
+      scale: 1.2;
+    }
+  }
+
+  &--spock {
+    box-shadow: inset 0rem 6px 0rem 0rem #babfd2,
+      0rem 6px 0rem 0rem darken($color-cyan, 10%);
+    &::before {
+      background: linear-gradient(var(--gradient-cyan));
+    }
+    &::after {
+      background: url("src/assets/images/icon-spock.svg") no-repeat center
+        center;
+      background-size: 40%;
+    }
+  }
+
+  &--scissors {
+    box-shadow: inset 0rem 6px 0rem 0rem #babfd2,
+      0rem 6px 0rem 0rem darken($color-scissors, 10%);
+    &::before {
+      background: linear-gradient(var(--gradient-scissors));
+    }
+    &::after {
+      background: url("src/assets/images/icon-scissors.svg") no-repeat center
+        center;
+      background-size: 40%;
+    }
+  }
+
+  &--rock {
+    box-shadow: inset 0rem 6px 0rem 0rem #babfd2,
+      0rem 6px 0rem 0rem darken($color-rock, 10%);
+    &::before {
+      background: linear-gradient(var(--gradient-rock));
+    }
+    &::after {
+      background: url("src/assets/images/icon-rock.svg") no-repeat center center;
+      background-size: 40%;
+    }
+  }
+
+  &--paper {
+    box-shadow: inset 0rem 6px 0rem 0rem #babfd2,
+      0rem 6px 0rem 0rem darken($color-paper, 10%);
+    &::before {
+      background: linear-gradient(var(--gradient-paper));
+    }
+    &::after {
+      background: url("src/assets/images/icon-paper.svg") no-repeat center
+        center;
+      background-size: 40%;
+    }
+  }
+
+  &--lizard {
+    box-shadow: inset 0rem 6px 0rem 0rem #babfd2,
+      0rem 6px 0rem 0rem darken($color-lizard, 10%);
+    &::before {
+      background: linear-gradient(var(--gradient-lizard));
+    }
+    &::after {
+      background: url("src/assets/images/icon-lizard.svg") no-repeat center
+        center;
+      background-size: 40%;
+    }
+  }
+}
