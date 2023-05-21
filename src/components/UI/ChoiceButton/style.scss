@@ -42,20 +42,6 @@ $color-body: #1f3756;
     height: 100%;
   }
 
-  @media (min-width: 900px) {
-    width: 200px;
-    height: 200px;
-    border-width: 25px;
-
-    &::before {
-      margin: -25px;
-    }
-
-    &:hover:before {
-      scale: 1.2;
-    }
-  }
-
   &--spock {
     box-shadow: inset 0rem 6px 0rem 0rem #babfd2,
       0rem 6px 0rem 0rem darken($color-cyan, 10%);
@@ -117,6 +103,20 @@ $color-body: #1f3756;
       background: url("src/assets/images/icon-lizard.svg") no-repeat center
         center;
       background-size: 40%;
+    }
+  }
+
+  @media (min-width: 900px) {
+    width: 200px;
+    height: 200px;
+    border-width: 25px;
+
+    &::before {
+      margin: -25px;
+    }
+
+    &:hover:before {
+      scale: 1.2;
     }
   }
 }
