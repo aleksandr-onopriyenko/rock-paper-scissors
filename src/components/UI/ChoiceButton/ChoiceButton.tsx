@@ -1,14 +1,19 @@
 import { FC } from "react";
 
+import { Choices } from "@/types/game";
 import "./style.scss";
 
 interface Props {
-  choice: "rock" | "paper" | "scissors" | "lizard" | "spock";
-  onChoiceSelected: (choice: string) => void;
+  disabled?: boolean;
+  isPreview?: boolean;
+  choice: Choices;
+  onChoiceSelected: (choice: Choices) => void;
 }
 
 export const ChoiceButton: FC<Props> = ({
   choice,
+  disabled,
+  isPreview = false,
   onChoiceSelected,
   ...props
 }) => {
@@ -17,7 +22,8 @@ export const ChoiceButton: FC<Props> = ({
   };
   return (
     <button
-      className={`btn btn--${choice}`}
+      disabled={isPreview}
+      className={`btn btn--${choice} ${disabled ? "disabled" : ""}`}
       onClick={handleClick}
       {...props}
       type="button"
