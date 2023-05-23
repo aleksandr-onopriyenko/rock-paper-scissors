@@ -1,0 +1,16 @@
+header {
+  padding: 1rem;
+  width: 90%;
+  margin-inline: auto;
+  border: 5px solid var(--outline-header);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+
+  @media (min-width: 900px) {
+    height: 150px;
+    width: 60%;
+  }
+}
