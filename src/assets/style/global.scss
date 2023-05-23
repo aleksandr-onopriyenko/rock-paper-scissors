@@ -37,4 +37,9 @@ html {
   background-image: radial-gradient(var(--gradient-body));
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-block: 60px 1rem;
+  min-height: 100vh;
 }
