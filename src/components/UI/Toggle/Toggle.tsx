@@ -9,5 +9,7 @@ export const Toggle: FC<
     {...props}
     className={`toggle toggle--${isOff ? "off" : "on"}`}
     type="button"
-  />
+  >
+    <span hidden>button</span>
+  </button>
 );

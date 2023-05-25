@@ -36,7 +36,7 @@ export const Header: FC<ComponentPropsWithoutRef<"header">> = ({ onClick }) => {
         </span>
         <Toggle
           disabled={!!computerChoice}
-          title={!!computerChoice ? "Try playing this mode" : ""}
+          title={!!computerChoice ? "Try playing this mode" : "Game mode"}
           style={{ scale: "0.7" }}
           onClick={onClick}
           isOff={mode !== Mode.Basic ? true : false}

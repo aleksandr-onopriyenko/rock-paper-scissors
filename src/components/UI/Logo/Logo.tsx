@@ -11,8 +11,8 @@ interface Props {
 }
 export const Logo: FC<Props> = ({ mode }) => {
   return (
-    <div className={`logo logo--${mode}`}>
-      <img src={mode === Mode.Basic ? basic : advance} />
-    </div>
+    <h1 className={`logo logo--${mode}`}>
+      <img src={mode === Mode.Basic ? basic : advance} alt="logo" />
+    </h1>
   );
 };
