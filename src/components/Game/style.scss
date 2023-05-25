@@ -75,7 +75,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: url("/assets/images/bg-triangle.svg");
+  background-image: url("@/assets/images/bg-triangle.svg");
   background-repeat: no-repeat;
   position: relative;
   gap: 5rem;
@@ -119,7 +119,7 @@ h2 {
   gap: 1rem;
   width: 90%;
   margin-inline: auto;
-  background-image: url(/assets/images/bg-pentagon.svg);
+  background-image: url(@/assets/images/bg-pentagon.svg);
   background-position: 50% 55%;
   opacity: 0;
   &.active {

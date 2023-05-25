@@ -64,7 +64,7 @@ $color-body: #1f3756;
       background: linear-gradient(var(--gradient-cyan));
     }
     &::after {
-      background: url("/assets/images/icon-spock.svg") no-repeat center center;
+      background: url("@/assets/images/icon-spock.svg") no-repeat center center;
       background-size: 40%;
     }
   }
@@ -76,7 +76,7 @@ $color-body: #1f3756;
       background: linear-gradient(var(--gradient-scissors));
     }
     &::after {
-      background: url("/assets/images/icon-scissors.svg") no-repeat center
+      background: url("@/assets/images/icon-scissors.svg") no-repeat center
         center;
       background-size: 40%;
     }
@@ -89,7 +89,7 @@ $color-body: #1f3756;
       background: linear-gradient(var(--gradient-rock));
     }
     &::after {
-      background: url("/assets/images/icon-rock.svg") no-repeat center center;
+      background: url("@/assets/images/icon-rock.svg") no-repeat center center;
       background-size: 40%;
     }
   }
@@ -101,7 +101,7 @@ $color-body: #1f3756;
       background: linear-gradient(var(--gradient-paper));
     }
     &::after {
-      background: url("/assets/images/icon-paper.svg") no-repeat center center;
+      background: url("@/assets/images/icon-paper.svg") no-repeat center center;
       background-size: 40%;
     }
   }
@@ -113,7 +113,7 @@ $color-body: #1f3756;
       background: linear-gradient(var(--gradient-lizard));
     }
     &::after {
-      background: url("/assets/images/icon-lizard.svg") no-repeat center center;
+      background: url("@/assets/images/icon-lizard.svg") no-repeat center center;
       background-size: 40%;
     }
   }

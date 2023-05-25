@@ -7,7 +7,7 @@ import advance from "@/assets/images/image-rules-bonus.svg";
 
 export const GameRules: FC<{ mode: string }> = ({ mode }) => {
   return (
-    <div
+    <footer
       className="game-rules"
       style={{
         display: "flex",
@@ -19,6 +19,6 @@ export const GameRules: FC<{ mode: string }> = ({ mode }) => {
       <Popup trigger="Rules">
         <img src={`${mode === Mode.Basic ? basic : advance}`} />
       </Popup>
-    </div>
+    </footer>
   );
 };

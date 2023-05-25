@@ -27,8 +27,7 @@ export const ChoiceButton: FC<Props> = ({
       onClick={handleClick}
       {...props}
       type="button"
-    >
-      <span hidden>button</span>
-    </button>
+      aria-label={"Choiced Button with " + choice + " icon"}
+    />
   );
 };

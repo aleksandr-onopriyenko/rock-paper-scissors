@@ -11,11 +11,11 @@ export const Header: FC<ComponentPropsWithoutRef<"header">> = ({ onClick }) => {
   const { mode, score, computerChoice } = useContext(ModeContext);
 
   return (
-    <>
-      <header>
+    <header>
+      <div className="header">
         <Logo mode={mode as GameMode} />
         <Score score={score} />
-      </header>
+      </div>
       <div
         style={{
           alignSelf: "center",
@@ -25,15 +25,17 @@ export const Header: FC<ComponentPropsWithoutRef<"header">> = ({ onClick }) => {
           textTransform: "uppercase",
           position: "fixed",
           top: 0,
+          left: "50%",
+          transform: "translateX(-50%)",
         }}
       >
-        <span
+        <strong
           style={{
             color: mode !== Mode.Basic ? "var(--color-dark)" : "inherit",
           }}
         >
           {Mode.Basic}
-        </span>
+        </strong>
         <Toggle
           disabled={!!computerChoice}
           title={!!computerChoice ? "Try playing this mode" : "Game mode"}
@@ -41,14 +43,14 @@ export const Header: FC<ComponentPropsWithoutRef<"header">> = ({ onClick }) => {
           onClick={onClick}
           isOff={mode !== Mode.Basic ? true : false}
         />
-        <span
+        <strong
           style={{
             color: mode !== Mode.Advance ? "var(--color-dark)" : "inherit",
           }}
         >
           {Mode.Advance}
-        </span>
+        </strong>
       </div>
-    </>
+    </header>
   );
 };
